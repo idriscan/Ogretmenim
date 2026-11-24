@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101827">
+<title>Öğretmenler Gününüz Kutlu Olsun Ümit Hocam</title>
+<style>
+:root{--bg:#0b1220;--panel:rgba(255,255,255,.075);--line:rgba(255,255,255,.13);--text:#f4f7fb;--muted:#b9c5d6;--gold:#f5c979;--cyan:#8bd9e8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 15% 10%,#203b55 0,transparent 38%),radial-gradient(ellipse at 85% 75%,#44304d 0,transparent 35%),linear-gradient(145deg,#09111e,#111c2c 55%,#171528);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.24;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent)}
+.wrap{width:min(920px,calc(100% - 32px));margin:auto;position:relative}
+nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0;color:var(--muted);font-size:.88rem}
+.brand{display:flex;align-items:center;gap:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.brand-mark{width:34px;height:34px;border:1px solid #f5c97977;border-radius:11px;display:grid;place-items:center;color:var(--gold);font-size:18px}
+.pill{border:1px solid var(--line);padding:8px 13px;border-radius:99px;background:#ffffff08}
+.hero{text-align:center;padding:74px 0 48px}
+.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.22em;font-size:.76rem;font-weight:700}
+h1{font-size:clamp(2.8rem,8vw,5.8rem);line-height:.98;letter-spacing:-.055em;margin:23px 0 20px}
+h1 span{display:block;background:linear-gradient(100deg,#fff 15%,#f5d99f 52%,#8bd9e8 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:640px;margin:0 auto;color:var(--muted);font-size:clamp(1rem,2.5vw,1.2rem);line-height:1.8}
+.hero-icon{width:88px;height:88px;margin:0 auto 28px;border-radius:28px;display:grid;place-items:center;font-size:42px;background:linear-gradient(145deg,#ffffff20,#ffffff08);border:1px solid var(--line);box-shadow:0 18px 55px #0005;transform:rotate(-5deg)}
+.scroll{display:inline-flex;gap:9px;align-items:center;margin-top:32px;color:var(--gold);text-decoration:none;font-size:.9rem}
+.card{background:linear-gradient(145deg,#ffffff12,#ffffff06);border:1px solid var(--line);border-radius:28px;padding:clamp(25px,5vw,48px);box-shadow:0 25px 80px #0003;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.message{margin:20px 0 70px}
+.section-kicker{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);font-weight:700}
+h2{font-size:clamp(1.7rem,4vw,2.5rem);letter-spacing:-.035em;margin:13px 0 22px}
+.message p{color:#d3dbe7;line-height:1.95;font-size:1.05rem;margin:0 0 16px}
+.signature{margin-top:28px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;align-items:end;flex-wrap:wrap}
+.signature strong{display:block;color:var(--gold);font-size:1.2rem;margin-bottom:5px}
+.signature small{color:var(--muted)}
+.signature .scribble{font-family:Georgia,serif;font-style:italic;font-size:1.8rem;color:#f5d99f}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 70px}
+.value{padding:22px 18px;border-radius:20px;background:#ffffff09;border:1px solid var(--line)}
+.value .ico{font-size:25px}
+.value h3{font-size:1rem;margin:12px 0 7px}
+.value p{color:var(--muted);font-size:.9rem;line-height:1.65;margin:0}
+.quote{margin-bottom:70px;text-align:center;padding:42px 25px}
+.quote-mark{font-family:Georgia,serif;font-size:4rem;color:var(--gold);line-height:.7}
+.quote p{font-family:Georgia,serif;font-size:clamp(1.3rem,3.5vw,2rem);line-height:1.55;margin:20px auto 12px;max-width:700px}
+.quote small{color:var(--muted)}
+footer{text-align:center;padding:10px 0 42px;color:#9ba9bc;font-size:.85rem}
+footer .heart{color:#f08c9c}
+button{border:1px solid #f5c97977;background:linear-gradient(120deg,#f5c979,#e9a95e);color:#17202d;padding:14px 21px;border-radius:99px;font-weight:800;font-size:.95rem;cursor:pointer;box-shadow:0 10px 30px #d89c4933;transition:transform .2s,filter .2s}
+button:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.action{text-align:center;margin:-35px 0 70px}
+#thanks{min-height:26px;color:var(--gold);margin-top:14px;font-size:.95rem}
+.spark{position:fixed;pointer-events:none;z-index:5;font-size:18px;animation:float 2.8s ease-out forwards}
+@keyframes float{0%{opacity:0;transform:translateY(20px) scale(.6) rotate(0)}15%{opacity:1}100%{opacity:0;transform:translateY(-120px) scale(1.5) rotate(35deg)}}
+@media(max-width:650px){nav{padding:18px 0}.hero{padding:55px 0 38px}.values{grid-template-columns:1fr}.value{display:flex;gap:15px;align-items:flex-start}.value .ico{padding-top:2px}.message{margin-bottom:55px}.quote{margin-bottom:55px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <div class="brand"><span class="brand-mark">✦</span> Bir teşekkür notu</div>
+  <div class="pill">24 Kasım · Öğretmenler Günü</div>
+</nav>
+
+<header class="hero">
+  <div class="hero-icon">🎓</div>
+  <div class="eyebrow">İyi ki öğretmenimiz oldunuz</div>
+  <h1>Öğretmenler Gününüz <span>Kutlu Olsun</span></h1>
+  <p class="lead">Ümit Hocam, bu yıl yollarımız ayrı düşmüş olsa da emeğiniz, öğrettikleriniz ve güzel hatıralarınız hâlâ bizimle.</p>
+  <a class="scroll" href="#mesaj">Sizin için küçük bir not hazırladık <span>↓</span></a>
+</header>
+
+<section class="card message" id="mesaj">
+  <div class="section-kicker">Kalpten gelen birkaç satır</div>
+  <h2>Sevgili Ümit Hocam,</h2>
+  <p>Öğretmenler Günü'nüz kutlu olsun! Bilişim bölümünde bize kattığınız bilgiler, verdiğiniz emek ve her zaman yanımızda oluşunuz için size çok teşekkür ederiz.</p>
+  <p>Bu yıl tayininizin çıkmasıyla artık aynı okulda, aynı koridorlarda karşılaşamıyor olmak gerçekten buruk. Varlığınıza, sohbetinize, desteğinize ve derslerde biriktirdiğimiz güzel anılara alışmışız. Yokluğunuz hissediliyor hocam; kısacası <strong>özlendiniz.</strong></p>
+  <p>Belki artık her gün görüşemiyoruz ama üzerimizde bıraktığınız iz ve bize öğrettikleriniz bizimle. İyi ki yolumuz sizinle kesişmiş. Yeni görevinizde de çok güzel öğrencilerin hayatına dokunmanız dileğiyle...</p>
+  <div class="signature">
+    <div><strong>Emekleriniz için minnettarız.</strong><small>Saygı ve sevgilerimizle</small></div>
+    <div class="scribble">İyi ki varsınız ✨</div>
+  </div>
+</section>
+
+<section class="values">
+  <article class="value"><div class="ico">💻</div><div><h3>Bize kattıklarınız</h3><p>Bilişim alanında öğrendiklerimiz ve kazandığımız bakış açısı için...</p></div></article>
+  <article class="value"><div class="ico">🤝</div><div><h3>Desteğiniz</h3><p>Sadece derslerde değil, ihtiyaç duyduğumuzda yanımızda olduğunuz için...</p></div></article>
+  <article class="value"><div class="ico">🌟</div><div><h3>Güzel hatıralar</h3><p>Aynı okulda geçirdiğimiz zamanları hep güzel hatırlayacağız.</p></div></article>
+</section>
+
+<section class="card quote">
+  <div class="quote-mark">“</div>
+  <p>İyi bir öğretmen, yalnızca bir şeyler öğretmez; öğrencisinin hayatında güzel bir iz bırakır.</p>
+  <small>Bizim hayatımızda bıraktığınız iz için teşekkürler Ümit Hocam.</small>
+</section>
+
+<div class="action">
+  <button id="surprise">Size küçük bir teşekkür daha 💛</button>
+  <div id="thanks" aria-live="polite"></div>
+</div>
+
+<footer>24 Kasım Öğretmenler Günü <span class="heart">♥</span> Saygı ve özlemle hazırlandı.</footer>
+</div>
+<script>
+const btn=document.getElementById('surprise'),out=document.getElementById('thanks');
+btn.addEventListener('click',()=>{
+  out.textContent='İyi ki bizim öğretmenimiz oldunuz Ümit Hocam. Sizi özledik! 💛';
+  const symbols=['✦','💛','✨','🎓','💻'];
+  for(let i=0;i<24;i++){
+    const s=document.createElement('span');s.className='spark';s.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    s.style.left=(8+Math.random()*84)+'vw';s.style.top=(45+Math.random()*45)+'vh';
+    s.style.animationDelay=(Math.random()*.7)+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),3500);
+  }
+});
+</script>
+</body>
+</html>
